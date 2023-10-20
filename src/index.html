@@ -30,7 +30,7 @@
       defer
     >
     </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
     <header class="header">
       <div class="header__container">
@@ -122,14 +122,10 @@
             Let’s fint out
           </button>
           <script>
-            $.getJSON('https://geolocation-db.com/json/')
+            $.getJSON('http://ip-api.com/json/')
                .done (function(location) {
-                  $('#country').html(location.country_name);
-                  $('#state').html(location.state);
+                  $('#country').html(location.country);
                   $('#city').html(location.city);
-                  $('#latitude').html(location.latitude);
-                  $('#longitude').html(location.longitude);
-                  $('#ip').html(location.IPv4);
                });
           </script>
         </div>
