@@ -30,6 +30,7 @@
       defer
     >
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
     <header class="header">
       <div class="header__container">
@@ -110,7 +111,9 @@
         <div class="client_location">
           <span>
             How much does it cost in 
-            <br><span class="colortext">“THERE  CLIENT LOCATION”</span> 
+            <br><span class="colortext">
+              <span id="city"></span>, <span id="country"></span>
+            </span> 
           </span>
           <button 
             class="button--form big"
@@ -118,6 +121,17 @@
           >
             Let’s fint out
           </button>
+          <script>
+            $.getJSON('https://geolocation-db.com/json/')
+               .done (function(location) {
+                  $('#country').html(location.country_name);
+                  $('#state').html(location.state);
+                  $('#city').html(location.city);
+                  $('#latitude').html(location.latitude);
+                  $('#longitude').html(location.longitude);
+                  $('#ip').html(location.IPv4);
+               });
+          </script>
         </div>
 
         <div class="services">
