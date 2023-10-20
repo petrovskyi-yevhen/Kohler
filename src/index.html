@@ -112,7 +112,7 @@
           <span>
             How much does it cost in 
             <br><span class="colortext">
-              <span id="city"></span>
+              <span id="city"></span>, <span id="country"></span>
             </span> 
           </span>
           <button 
@@ -125,7 +125,7 @@
             $.getJSON('https://api.bigdatacloud.net/data/reverse-geocode-client')
                .done (function(location) {
                   $('#city').html(location.city);
-                  $('#countryName').html(location.country);
+                  $('#country').html(location.countryName);
                });
           </script>
         </div>
