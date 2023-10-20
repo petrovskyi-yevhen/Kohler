@@ -1,0 +1,79 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  height: 304px;
+  gap: 10px;
+  margin-top: 40px;
+  background-color: $color-blue;
+
+  @include onDesktop {
+    position: relative;
+    height: 251px;
+  }
+
+  &__img {
+    height: 40px;
+    margin: 30px 0 20px 20px;
+  }
+
+  &__link {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0.005em;
+    text-align: left;
+    margin-left: 20px;
+    color: #fff;
+
+    &:nth-last-child(1) {
+      margin-top: 20px;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@include onDesktop {
+  .footer > .link1 {
+    position: absolute;
+    top: 30px;
+    left: 17%;
+  }
+
+  .footer > .link2 {
+    position: absolute;
+    top: 60px;
+    left: 17%;
+  }
+
+  .footer > .link3 {
+    position: absolute;
+    top: 30px;
+    left: 43%;
+  }
+
+  .footer > .link4 {
+    position: absolute;
+    top: 60px;
+    left: 43%;
+  }
+
+  .footer > .link5 {
+    position: absolute;
+    top: 30px;
+    right: 10%;
+  }
+
+  .footer > .link6 {
+    position: absolute;
+    top: 60px;
+    right: 10%;
+  }
+
+  .footer > .link7 {
+    position: absolute;
+    bottom: 10px;
+    left: 35%;
+  }
+}

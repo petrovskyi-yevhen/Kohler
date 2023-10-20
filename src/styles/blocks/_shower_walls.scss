@@ -1,0 +1,165 @@
+@include onDesktop {
+  .desktop-title-walls {
+    position: absolute;
+    width: 558px;
+    height: 200px;
+    background-color: #ffffff;
+    opacity: 85%;
+    top: 164px;
+  }
+
+  .desktop-title-walls > .section-title {
+    color: $color-blue;
+    font-size: 36px;
+  }
+
+  .desktop-title-walls > .section-text {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+.shower__walls--container {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  width: 390px;
+  margin: 10px 0 10px 20px;
+
+  @include onDesktop {
+    position: absolute;
+    width: 495px;
+    height: 200px;
+    top: 364px;
+    left: 40px;
+  }
+}
+
+.shower__walls--text {
+  display: list-item;
+  margin-left : 1em;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.005em;
+  text-align: left;
+  color: #1f2937;
+  margin: 10px 0 10px 20px;
+
+  @include onDesktop {
+    font-size: 22px;
+    color: #ffffff;
+  }
+}
+
+.shower__walls--title {
+  margin: 0 auto;
+  width: 388px;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0.005em;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: $margin-top;
+
+  @include onDesktop {
+    width: 754px;
+    font-size: 36px;
+    line-height: 44px;
+  }
+}
+
+.shower__walls--cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  overflow: scroll;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch; /* Важливо  для iOS-пристроїв */
+
+  @include onDesktop {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    max-width: 1440px;
+    min-height: 944px;
+  }
+}
+
+.shower__walls--card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  width: 270px;
+  height: 420px;
+  background-color: $color-baground;
+  border: 1px solid #e5e7eb;
+  border-radius: 9px;
+  scroll-snap-align: center;
+
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  &-imgs {
+    position: relative;
+  }
+
+  &-img {
+    object-fit: cover;
+  }
+
+  &-ellipse {
+    position: absolute;
+    left: 15px;
+    top: 185px;
+  }
+
+  &-title {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+    text-align: center;    
+    margin: 10px 0 10px 0;
+  }
+
+  &-text {
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0.005em;
+    text-align: center;
+    color: #9ca3af;
+    margin: 0 20px 0 20px;
+  }
+}
+
+.showers_examples {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+
+  @include onDesktop {
+    &--img {
+      width: 434px;
+    }
+  }
+}
+
+.shower {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

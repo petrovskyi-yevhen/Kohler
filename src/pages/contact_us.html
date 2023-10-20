@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <title>Do not sell my personal information</title>
+  <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+  <meta name="viewport"
+    content="width=device-width, initial-scale=0.8, maximum-scale=1.0, user-scalable=no, height=device-height">
+  <meta name="description" content="Home Shower expert">
+  <meta name="keywords" content="">
+  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="../styles/blocks/terms.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container">
+      <div class="top-actions">
+        <a href="../index.html" class="logo">
+          <img src="../images/header/Logo_new.svg" class="logo_img" alt="Kohler">
+        </a>
+  
+        <div id="overlay" onclick="off()">
+        </div>
+      </div>
+    </div>
+  </header>
+
+      <form
+        id="contact_us"
+        action=""
+        class="do_not_sell"
+        name="submit-to-google-sheet"
+      >
+        <div class="tab__form">
+          <div class="form__title">
+            Contact homemate
+          </div>
+          <div class="label-2--text">
+            Have a question for homemate? We’re happy to help! Fill out the form and we'll get back to you.
+          </div>
+
+          <div class="label__title">
+            Subject
+          </div>
+          <div class="label-2">
+            <select name="subject" id="subject-select">
+              <option value="general_inquiry">General inquiry</option>
+              <option value="partnership">I`m a contractor/installer interested in a partnership</option>
+              <option value="feedback">Feedback</option>
+            </select>
+          </div>
+
+          <div class="label__title">
+            Your name
+          </div>
+          <div class="label-2">
+            <input
+              placeholder="Enter your name" 
+              name="name"
+              type="text"
+              required
+            >
+          </div>
+
+          <div class="label__title">
+            Email
+          </div>
+          <div class="label-2">
+            <input
+              placeholder="yourmail@site.com"
+              name="email"
+              type="email"
+              required
+            >
+          </div>
+          <div class="label__title">
+            Your massage
+          </div>
+          <div class="input__text">
+            <textarea 
+              type="text"
+              name="massage"
+              rows="5"
+              cols="48"
+              wrap="soft"
+              placeholder="Type your massage..."
+              required
+            ></textarea>
+          </div>
+        </div>
+        <button
+          class="submit-button"
+          type="submit"
+        >
+          Submit
+        </button>
+        <span id="sendText"></span>
+      </form>
+
+  <footer class="footer">
+    <a href="#">
+      <img src="../images/section/logo-6.svg" class="footer__img">
+    </a>
+    
+    <a href="../pages/terms.html" class="footer__link link1" target="_blank">Terms of Use</a>
+    <a href="../pages/privacy_notice.html" class="footer__link link2" target="_blank">Privacy Policy</a>
+    <a href="../pages/partners.html" class="footer__link link3" target="_blank">Premier Partners</a>
+    <a href="../pages/do_not_sell.html" class="footer__link link4" target="_blank">Do Not Sell My Personal Information</a>
+    <a href="../pages/cookie.html" class="footer__link link5" target="_blank">Cookie policy</a>
+    <a href="../pages/contact_us.html" class="footer__link link6" target="_blank">CONTACT US</a>
+
+    <div class="footer__link link7">
+      HomeShowerExpert.com © 2023. All Rights Reserved.
+    </div>
+
+  </footer>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxXXxdYbp-JYdgpPcIe18jqxC2j2_W7_5V_xoAhvVJPpLpWx-gYnF3d5ekHY4rX5YuYyg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const sendText = document.getElementById('sendText')
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          sendText.innerHTML = "Thank's you data send successfully!"
+          setTimeout(function(){
+            sendText.innerHTML = ""
+        }, 3000)
+        form.reset()
+      })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  <script async="" src="../scripts/terms-preload.js"> </script>
+  <script src="../scripts/terms-secondary.js"> </script>
+</body>
+
+</html>

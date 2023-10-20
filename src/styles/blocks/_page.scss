@@ -1,0 +1,16 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  scroll-behavior: smooth;
+}
+
+.header, .main, .footer, .form__conteiner {
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
+  
+  @include onDesktop {
+    max-width: 1440px;
+  }
+}

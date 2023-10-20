@@ -1,0 +1,89 @@
+.services__cards--small {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, 185px);
+  gap: 20px;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 343px);
+  }
+  
+  @media (min-width: 1100px) {
+    grid-template-columns: repeat(3, 343px);
+  }
+}
+
+.services__card--small {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 185px;
+  height: 280px;
+  background-color: $color-baground;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  margin-top: $margin-top;
+  margin-bottom: $margin-top;
+
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  @include onDesktop {
+    width: 343px;
+    height: 434px;
+    border-radius: 16px;
+  }
+
+  &--img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &--title {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+    text-align: center;    
+    margin-top: $margin-top;
+
+    &:last-child{
+      font-size: 16px;
+      line-height: 17px;
+    }
+
+    @include onDesktop {
+      font-size: 22px;
+      line-height: 20px;
+      padding: 10px 0 10px 0;
+    }
+  }
+
+  &--text {
+    width: 165px;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0.005em;
+    text-align: center;
+    color: #9ca3af;
+    margin-top: 5px;
+    margin-bottom: $margin-top;
+
+    @include onDesktop {
+      width: 303px;
+      font-family: Inter;
+      font-size: 18px;
+      line-height: 22px;
+      padding: 10px 0 10px 0;
+    }
+  }
+}
+
+#last_small_title {
+  font-size: 16px;
+  line-height: 19px;
+}

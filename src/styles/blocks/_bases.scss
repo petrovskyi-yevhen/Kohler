@@ -1,0 +1,249 @@
+p {
+  margin-top: $margin-top;
+}
+
+.section-title-desktop-bases {
+  @include onDesktop {
+    position: absolute;
+    top: 140px;
+    width: 558px;
+    height: 266px;
+    opacity: 85%;
+    background-color: #fff;
+  }
+}
+
+.section-title-desktop-bases > .section-title {
+  @include onDesktop {
+    color: $color-blue;
+    font-size: 36px;
+    line-height: 44px;
+  }
+}
+
+.bases__cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.bases__card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  width: 380px;
+  height: 566px;
+  background-color: $color-baground;
+  border: 1px solid #e5e7eb;
+  border-radius: 9px;
+
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  &:nth-child(2){
+    height: 676px;
+  }
+
+  @include onDesktop {
+    width: 580px;
+    justify-content: start;
+  }
+
+  &-discription {
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    height: 395px;
+    align-items: start;
+    position: relative;
+
+    @include onDesktop {
+      justify-content: start;
+      width: 580px;
+    }
+  }
+
+  &-ellipse-1 {
+    position: absolute;
+    top: 220px;
+    left: 20px;
+
+    @include onDesktop {
+      top: 150px;
+    }
+  }
+
+  &-ellipse-2 {
+    position: absolute;
+    top: 220px;
+    left: 80px;
+
+    @include onDesktop {
+      top: 150px;
+    }
+  }
+
+  &-ellipse-3 {
+    position: absolute;
+    top: 220px;
+    left: 140px;
+
+    @include onDesktop {
+      top: 150px;
+    }
+  }
+
+  &-title {
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.005em;
+    margin-left: 20px;
+
+    @include onDesktop {
+      font-size: 24px;
+      margin-left: 20px;
+      width: 450px;
+    }
+  }
+
+  &-title p {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0.005em;
+    color: #1f2937;
+  }
+
+  &-text {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.005em;
+    color: #9ca3af;
+    margin-top: $margin-top;
+    margin-left: 30px;
+    width: 320px;
+
+    @include onDesktop {
+      width: 580px;
+    }
+  }
+}
+
+.bases__card-text span {
+  margin-left: 13px;
+
+  @include onDesktop {
+    margin-left: 0px;
+  }
+}
+
+.bases__title {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0.005em; 
+  text-align: center;
+  margin-top: 50px;
+
+  @include onDesktop {
+    font-size: 36px;
+  }
+}
+
+.bases__title--desktop {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0.005em; 
+}
+
+@include onMobile {
+  .bases__title--desktop {
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    margin-top: 50px;
+  }
+}
+
+.bases__text {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.005em;
+  max-width: 467px;
+
+  @include onMobile {
+    margin: 15px 0 10px 30px;
+    width: 390px;
+  }
+}
+
+@include onDesktop {
+  .desktop__bases {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    grid-template-rows: 0.4fr 1.6fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: start;
+    grid-template-areas:
+      "desktop-photos bases__title--desktop"
+      "desktop-photos bases__text";
+
+    margin-top: 5%;
+
+    &--container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  
+  .desktop-photos {
+    grid-area: desktop-photos;
+    justify-content: end;
+    align-items: center;
+  }
+
+  .desktop-photo {
+    margin-top: 5px;
+  }
+  
+  .bases__title--desktop {
+    grid-area: bases__title--desktop;
+    margin-left: 5%;
+  }
+  
+  .bases__text {
+    grid-area: bases__text;
+    margin-left: 5%;
+  }
+}
+
+@include onMobile {
+  .desktop-photos {
+    overflow: hidden;
+    margin-top: $margin-top;
+  }
+
+  .desktop-photo {
+    width: 100%;
+    margin-top: $margin-top;
+  }
+}

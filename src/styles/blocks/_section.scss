@@ -1,0 +1,274 @@
+.title {
+  display: flex;
+  flex-direction: column;
+  margin-top: $margin-top;
+  position: relative;
+}
+
+@include onDesktop {
+  .desktop-title {
+    position: absolute;
+    width: 558px;
+    height: 332px;
+    background-color: #ffffff;
+    opacity: 85%;
+    top: 114px;
+  }
+}
+
+.section-title {
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.5px;
+  color: $color-text;
+  margin-top: $margin-top;
+  margin-left: 20px;
+  width: 390px;
+
+  @include onDesktop {
+    font-family: Inter;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 0.005em;
+    text-align: left;
+    width: 478px;
+    margin: 30px 0 0 40px;
+  }
+}
+
+.section-text {
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.5px;
+  color: $color-text;
+  margin-top: $margin-top;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 430px;
+
+  @include onDesktop {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.005em;
+    text-align: left;
+    color: #1f2937;
+    width: 457px;
+    margin: 10px 0 0 40px;
+  }
+}
+
+.colortext {
+  color: $color-blue;
+}
+
+.section-photos {
+  overflow: hidden;
+  margin-top: $margin-top;
+}
+
+.section-photo{
+  width: 100%;
+  margin-top: $margin-top;
+
+  @include onDesktop {
+    height: 680px;
+    object-fit: cover;
+  }
+}
+
+.section-photo .desktop {
+  @include onDesktop {
+    width: 700px;
+  }
+}
+
+.photo__discription {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 5px 5px;
+  margin-top: 16px;
+  text-align: center;
+
+  &--item {
+    width: 117px;
+    font-size: 12px;
+    text-align: center;
+    color: #9ca3af;
+
+    @include onDesktop {
+      font-family: Inter;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 22px;
+      letter-spacing: 0.005em;
+      text-align: center;
+      width: 195px;
+    }
+
+    &-div{
+      display: block;
+      height: 20px;
+      width: 1px;
+      background: #9ca3af;
+
+      @include onDesktop {
+        height: 40px;
+      }
+    }
+  }
+}
+
+.client_location {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  text-align: center;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0.005em;
+
+  &--title {
+    width: 388px;
+    padding-bottom: 20px;
+
+    @include onDesktop {
+      width: 780px;
+    }
+
+  }
+
+  @include onDesktop {
+    font-family: Inter;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 44px;
+    letter-spacing: 0.005em;
+    text-align: center;
+  }
+
+}
+
+.client_location .desktop {
+  width: 388px;
+}
+
+.install {
+  @include onDesktop {
+    display: none;
+  }
+}
+
+.lifetime__warranties {
+  &--desktop {
+    @include onDesktop {
+      background-color: #dbeafe;
+    }
+  }
+
+  &--title {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: 0.005em;
+    height: 75px;
+    margin: 10px 0 10px 0;
+    padding-top: 5%;
+    background-color: #dbeafe;
+    text-align: center;
+
+    @include onDesktop {
+      font-size: 36px;
+      line-height: 44px;
+    }
+  }
+
+  &--conteiner {
+    width: 380px;
+    margin: auto;
+
+      &-text {
+        font-family: Inter;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 27px;
+        letter-spacing: 0.005em;
+        text-align: center;
+
+        margin-top: 30px;
+        margin-bottom: 15px;
+
+        @include onDesktop {
+          font-size: 36px;
+          line-height: 43px;
+        }
+      }
+
+      &-items {
+        display: inline-block;
+        position: relative;
+        width: 120px;
+        height: 59px;
+        border: 1px solid #e5e7eb;
+        border-radius: 8px;
+        text-align: center;
+        z-index: -1;
+
+        @include onDesktop {
+          z-index: 0;
+          border: 1px solid #fff;
+          background-color: #fff;
+        }
+      }
+
+      &-item {
+        font-family: Inter;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0.005em;
+        text-align: center;
+        color: $color-blue;
+
+        &:nth-child(odd){
+          margin-top: 10px;
+        }
+
+        &:nth-child(even){
+          margin-top: 8px;
+        }
+      }
+
+    .small {
+      font-family: Inter;
+      font-size: 10px;
+      font-weight: 500;
+      line-height: 10px;
+      letter-spacing: 0.005em;
+      text-align: center;
+      color: #9ca3af;
+    }
+  }
+
+  &--imgs {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px 30px 30px 30px;
+    
+    @include onDesktop {
+      padding-bottom: 20px;
+    }
+  }
+}

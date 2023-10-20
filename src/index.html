@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8, user-scalable=0">
+    <title>KOHLER LuxStone</title>
+    <link rel="stylesheet" href="../src/styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+
+  <body class="page">
+    <script
+      type="text/javascript"
+      src="../src/scripts/menu.js"
+      defer
+    >
+    </script>
+    <script
+      type="text/javascript"
+      src="../src/scripts/overlay.js"
+      defer
+    >
+    </script>
+    <script
+      type="text/javascript"
+      src="../src/scripts/form.js"
+      defer
+    >
+    </script>
+
+    <header class="header">
+      <div class="header__container">
+        <div class="top-actions">
+          <a href="#" class="logo">
+            <img src="../src/images/header/Logo_new.svg" class="logo_img" alt="Kohler">
+          </a>
+
+          <button
+            onclick="openForm(), on()"
+            class="button--form">Get free consultation</button>
+
+          <div id="overlay" onclick="off()">
+          </div>
+
+          <div
+            onclick="dropMenu(), on()"
+            class="icon icon--menu dropbtn hamburger-lines"
+            alt="burger-menu"
+          >
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+          </div>
+          
+          <div id="myDropdown" class="dropdown-content">
+            <a href="../src/index.html" class="dropdown-content__item">What we do</a>
+            <div class="dropdown-content__item-div"></div>
+            <a href="../src/pages/shower_accessories.html" class="dropdown-content__item">Shower Accesorries</a>
+            <a href="../src/pages/shower_walls.html" class="dropdown-content__item">Shower Walls</a>
+            <a href="../src/pages/showerheads.html" class="dropdown-content__item">Shoverheads</a>
+            <a href="../src/pages/grab_bars.html" class="dropdown-content__item">Grab Bars</a>
+            <a href="../src/pages/shover_seating.html" class="dropdown-content__item">Shower Seating</a>
+            <a href="../src/pages/bases.html" class="dropdown-content__item">Bases</a>
+            <div class="dropdown-content__item-div"></div>
+            <a href="../src/pages/contact_us.html" class="dropdown-content__item">Contact with us</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="title">
+        <div class="desktop-title">
+          <h1 class="section-title">
+            FIND THE
+            <span class="colortext">BEST DEAL</span>
+            ON SHOWER INSTALLATIONS
+            IN YOUR AREA
+          </h1>
+          <div class="section-text">
+            Durable, versatile, and budget-friendly showers -
+            that's what Kohler LuxStone provides. Our showers offer various styles, cater to diverse bathing requirements, and can be custom-built for any space without the need for building permits.
+          </div>
+        </div>
+
+        <div class="section-photos">
+          <video src="../src/images/section/feature-hero-video-overlay.mp4" class="section-photo" playsinline="playsinline" autobuffer="autobuffer" autoplay="autoplay" loop="loop" preload="auto" muted="muted"></video>
+        </div>
+
+        <div class="photo__discription">
+          <div class="photo__discription--item">
+            Walk-in shower in 
+            <br> as little as 1 day.
+          </div>
+          <div class="photo__discription--item-div"></div>
+          <div class="photo__discription--item">
+            Raise the value of
+            <br> your home.
+          </div>
+          <div class="photo__discription--item-div"></div>
+          <div class="photo__discription--item">
+            Update your
+            <br> bathroom’s look.
+          </div>
+        </div>
+        
+        <div class="client_location">
+          <span>
+            How much does it cost in 
+            <br><span class="colortext">“THERE  CLIENT LOCATION”</span> 
+          </span>
+          <button 
+            class="button--form big"
+            onclick="openForm(), on()"
+          >
+            Let’s fint out
+          </button>
+        </div>
+
+        <div class="services">
+          <div class="services__title">
+            Our services
+          </div>
+          <div class="services__cards--big">
+            <div class="services__card">
+              <img class="services__card--img" src="../src/images/section/Our-services-1.svg">
+              <div class="services__card--title">Convert the Tub to Your 
+                <br>New Walk-in Shower</div>
+              <div class="services__card--text">Say goodbye to the hassle of getting in and out of your high-threshold bathtub. And in just 1 day, say hello to the ease of mobility your new Kohler LuxStone walk-in shower brings.
+              </div>
+              <button
+                class="button--form medium"
+                onclick="openForm(), on()"
+              >
+                Order now
+              </button>
+            </div>
+
+            <div class="services__card">
+              <img class="services__card--img" src="../src/images/section/Our-services-2.svg">
+              <div class="services__card--title">Modernize Your Shower</div>
+              <div class="services__card--text dsctp">Get rid of the old shower that really dates your bathroom. Start fresh with your new Kohler LuxStone walk-in shower, custom-designed to fit your space and your lifestyle.
+              </div>
+              <button
+                class="button--form medium"
+                onclick="openForm(), on()"
+              >
+                Order now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="lifetime__warranties">
+          <div class="lifetime__warranties--desktop">
+            <div class="lifetime__warranties--title">We Offering
+              <span class="colortext">Lifetime Warranties</span>
+              <br>and
+              <span class="colortext">Guarantees</span>
+            </div>
+            
+            <div class="lifetime__warranties--conteiner">
+              <div class="lifetime__warranties--conteiner-text">
+                Trust us from start to finish
+              </div>
+              <div class="lifetime__warranties--conteiner-items">
+                <div class="lifetime__warranties--conteiner-item">
+                  752
+                </div>
+                <div class="lifetime__warranties--conteiner-item small">
+                  Project requsts
+                </div>
+              </div>
+              <div class="lifetime__warranties--conteiner-items">
+                <div class="lifetime__warranties--conteiner-item">
+                  569
+                </div>
+                <div class="lifetime__warranties--conteiner-item small">
+                  Estimates given
+                </div>
+              </div>
+              <div class="lifetime__warranties--conteiner-items">
+                <div class="lifetime__warranties--conteiner-item">
+                  396
+                </div>
+                <div class="lifetime__warranties--conteiner-item small">
+                  Projects completed
+                </div>
+              </div>
+              <div class="lifetime__warranties--imgs">
+                <img src="../src/images/section/4.png">
+                <img src="../src/images/section/1.png">
+                <img src="../src/images/section/2.png">
+                <img src="../src/images/section/3.png">
+              </div>
+            </div>
+          </div>
+
+          <div class="client_location install">
+            Installation process
+          </div>
+
+          <div class="section-photos">
+            <video src="../src/images/section/main-process.mp4" class="section-photo install" playsinline="playsinline" autobuffer="autobuffer" autoplay="autoplay" loop="loop" preload="auto" muted="muted"></video>
+          </div>
+
+          <div class="client_location">
+            <div class="client_location--title">
+              Enjoy a shower that’s 
+              <span class="colortext">uniquely designed
+              </span>for you with Kohler LuxStone showers.
+            </div>
+          </div>
+
+          <div class="services__cards--small">
+            <div class="services__card--small">
+              <img class="services__card--small--img" src="../src/images/section/Image0.png">
+              <div class="services__card--small--title">Shower Walls</div>
+              <div class="services__card--small--text">
+                Personalize your shower enclosure with superior accessories that maximize your space.
+              </div>
+              <button
+                onclick="window.location.href = '../src/pages/shower_walls.html';"
+                class="button--form smallbtn"
+              >
+                Learn more
+              </button>
+            </div>
+
+            <div class="services__card--small">
+              <img class="services__card--small--img" src="../src/images/section/Image1.png">
+              <div class="services__card--small--title">Shower Accessories</div>
+              <div class="services__card--small--text">
+                Personalize your shower enclosure with superior accessories that maximize your space.
+              </div>
+              <button
+                onclick="window.location.href = '../src/pages/shower_accessories.html';"
+                class="button--form smallbtn"
+              >
+                Learn more
+              </button>
+            </div>
+
+            <div class="services__card--small">
+              <img class="services__card--small--img" src="../src/images/section/Image-2.png">
+              <div class="services__card--small--title">Showerheads</div>
+              <div class="services__card--small--text">
+                Elegant and refined, these showerheads provide exceptional shower performance.
+              </div>
+              <button
+                onclick="window.location.href = '../src/pages/showerheads.html';"
+                class="button--form smallbtn">
+                Learn more
+              </button>
+            </div>
+
+            <div class="services__card--small">
+              <img class="services__card--small--img" src="../src/images/section/Image-3.png">
+              <div class="services__card--small--title">Grab Bars</div>
+              <div class="services__card--small--text">
+                Gain more independence and prevent falls by securing your shower enclosure with grab bars.
+              </div>
+              <button
+                onclick="window.location.href = '../src/pages/grab_bars.html';"
+                class="button--form smallbtn"
+              >
+                Learn more
+              </button>
+            </div>
+
+            <div class="services__card--small">
+              <img class="services__card--small--img" src="../src/images/section/Image-4.png">
+              <div class="services__card--small--title">Shower Seats</div>
+              <div class="services__card--small--text">
+                Make your shower a safer place to relax. View Kohler LuxStone’s sturdy shower seats and benches.
+              </div>
+              <button
+                onclick="window.location.href = '../src/pages/shover_seating.html';"
+                class="button--form smallbtn"
+              >
+                Learn more
+              </button>
+            </div>
+
+            <div class="services__card--small">
+              <img class="services__card--small--img" src="../src/images/section/Image-5.png">
+              <div class="services__card--small--title" id="last_small_title">Low and No-Threshold Bases
+              </div>
+              <div class="services__card--small--text">
+                Those are just a few of the quality showerheads Kohler LuxStone has to offer.
+              </div>
+              <button
+                onclick="window.location.href = '../src/pages/bases.html';"
+                class="button--form smallbtn"
+              >
+                Learn more
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="customer_reviews">
+          <img
+            src="../src/images/section/Google-Logo 1.svg" alt="google_logo"
+            class="customer_reviews--logo"
+          >
+          <div class="customer_reviews--title">
+            Customer reviews:
+          </div>
+          <div class="customer_reviews--text">
+            Rated 4.9 - 138 reviews
+          </div>
+          <img src="../src/images/section/Stars.svg" class="customer_reviews--stars">
+          <div class="customer_reviews--title-big">
+            What 
+            <span class="colortext">
+              People Are Saying
+            </span>
+          </div>
+
+          <div class="customer_reviews--cards">
+            <img src="../src/images/section/Card.svg" class="customer_reviews--cards-img">
+            <img src="../src/images/section/Card-2.svg" class="customer_reviews--cards-img">
+            <img src="../src/images/section/Card-3.svg" class="customer_reviews--cards-img">
+          </div>
+
+          <div class="customer_reviews--title-imgs">
+            Have A Look At Kohler LuxStone’s Design Options
+          </div>
+
+          <div class="customer_reviews--imgs">
+            <img src="../src/images/section/imgs_review/Image.svg" class="customer_reviews--imgs-img">
+            <img src="../src/images/section/imgs_review/Image-2.svg" class="customer_reviews--imgs-img">
+            <img src="../src/images/section/imgs_review/Image-3.svg" class="customer_reviews--imgs-img">
+            <img src="../src/images/section/imgs_review/Image-4.svg" class="customer_reviews--imgs-img">
+            <img src="../src/images/section/imgs_review/Image-5.svg" class="customer_reviews--imgs-img">
+          </div>
+
+          <div class="get_started">
+            LET’S GET STARTED
+          </div>
+          <button
+            class="button--form big"
+            onclick="openForm(), on()"
+          >
+            Get estimate
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <div class="form__conteiner">
+      <div class="form-popup" id="myForm">
+
+        <header class="header__form" id="myFormHeader">
+          <div class="top-actions-form">
+            <a href="#" class="logo">
+              <img src="../src/images/header/Logo_new.svg" class="logo_img" alt="Kohler">
+            </a>
+  
+            <div
+              onclick="closeForm(), off()"
+              class="icon icon--menu dropbtn hamburger-lines"
+              alt="burger-menu"
+            >
+              <span class="form-line form-line1"></span>
+              <span class="form-line form-line2"></span>
+            </div>
+          </div>
+        </header>
+
+        <form
+          id="regForm"
+          class="form-container"
+          name="submit-to-google-sheet"
+        >
+          <div class="tab">
+            <div class="form__title">
+              Fill the form for get free consultation
+            </div>
+            <div class="form__title--radio">
+              Describe your project
+            </div>
+
+            <div class="label">
+              <img src="../src/images/form/bath.svg" alt="">
+              <label for="tub-to-shower">Tub-to-shower conversion</label>
+              <input
+                type="radio"
+                id="tub-to-shower"
+                oninput="this.className = ''"
+                name="your_project"
+                value="tub-to-shower"
+              >
+            </div>
+
+            <div class="label">
+              <img src="../src/images/form/door.svg" alt="">
+              <label for="shower_replacement">Shower replacement</label>
+              <input
+                type="radio"
+                id="shower_replacement"
+                oninput="this.className = ''"
+                name="your_project"
+                value="shower_replacement"
+              >
+            </div>
+
+            <div class="label">
+              <img src="../src/images/form/question.svg" alt="">
+              <label for="other">Other</label>
+              <input
+                type="radio"
+                id="other"
+                oninput="this.className = ''"
+                name="your_project"
+                value="other"
+              >
+            </div>
+
+            <div class="form__title--radio">
+              Would you prefer glass doors or a curtain rod?
+            </div>
+            <div class="label">
+              <img src="../src/images/form/glass_door.svg" alt="">
+              <label for="glass_doors">Glass doors</label>
+              <input
+                type="radio"
+                id="glass_doors"
+                oninput="this.className = ''"
+                name="glass_or_rod"
+                value="glass_doors"
+              >
+            </div>
+
+            <div class="label">
+              <img src="../src/images/form/rod.svg" alt="">
+              <label for="curtain_rod">Curtain rod</label>
+              <input
+                type="radio"
+                id="curtain_rod"
+                oninput="this.className = ''"
+                name="glass_or_rod"
+                value="curtain_rod"
+              >
+            </div>
+
+            <div class="form__title--radio">
+              Where are you in the planning process?
+            </div>
+
+            <div class="label">
+              <img src="../src/images/form/install.svg" alt="">
+              <label for="ready_to_install">Ready to install</label>
+              <input
+                type="radio"
+                id="ready_to_install"
+                oninput="this.className = ''"
+                name="install_or_price"
+                value="ready_to_install"
+              >
+            </div>
+
+            <div class="label">
+              <img src="../src/images/form/price.svg" alt="">
+              <label for="price">Just getting a price</label>
+              <input
+                type="radio"
+                id="price"
+                oninput="this.className = ''"
+                name="install_or_price"
+                value="price"
+              >
+            </div>
+
+          </div>
+
+          <div class="tab">
+            <div class="form__title">
+              Fill the form for get free consultation
+            </div>
+
+            <div class="label__title">
+              Your name
+            </div>
+            <div class="label-2">
+              <input
+                placeholder="Enter your name" 
+                oninput="this.className = ''"
+                name="name"
+              >
+            </div>
+
+            <div class="label__title">
+              Your phone number
+            </div>
+            <div class="label-2">
+              <input
+                placeholder="+1 (000) 000-0000"
+                oninput="this.className = ''"
+                name="phoneNumber"
+                required
+              >
+            </div>
+            <div class="label-2--text">
+              This is a privacy information
+            </div>
+
+            <div class="label__title">
+              Email
+            </div>
+            <div class="label-2">
+              <input
+                placeholder="yourmail@site.com"
+                oninput="this.className = ''"
+                name="email"
+              >
+            </div>
+
+            <div class="label__title">
+              ZIP code
+            </div>
+            <div class="label-2">
+              <input
+                placeholder="your ZIP code"
+                oninput="this.className = ''"
+                name="zipCode"
+              >
+            </div>
+            <div class="label-2--text">
+              Your index will help us understand whether we can provide our service in your region
+            </div>
+          </div>
+          <div class="tab-button">
+            <button
+              type="button"
+              id="prevBtn"
+              onclick="nextPrev(-1)"
+            >
+              Previous step
+            </button>
+            <button
+              type="button"
+              id="nextBtn"
+              onclick="nextPrev(1)"
+            >
+              Next step
+            </button>
+          </div>
+
+          <div id="popup" class="popup">
+            <img class="popup-img" src="../src/images/form/Icon.svg">
+            <div class="popup-text">
+              Fill the contact information, please
+            </div>
+          </div>
+
+          <div id="error-message">
+            Please select at least one option for each question.
+          </div>
+
+          <div id="success-message" class="success-message">
+            <img src="../src/images/form/Icon_2.svg" class="success-message-img">
+            <div class="success-message-text">
+              We will contact you soon
+            </div>
+          </div>
+          <span id="errorText"></span>
+        </form>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <a href="#">
+        <img src="../src/images/section/logo-6.svg" class="footer__img">
+      </a>
+      <a
+        href="../src/pages/terms.html"
+        class="footer__link link1"
+        target="_blank"
+      >
+        Terms of Use
+      </a>
+      <a
+        href="../src/pages/privacy_notice.html"
+        class="footer__link link2"
+        target="_blank"
+      >
+        Privacy Policy
+      </a>
+      <a
+        href="../src/pages/partners.html"
+        class="footer__link link3"
+        target="_blank"
+      >
+        Premier Partners
+      </a>
+      <a
+        href="../src/pages/do_not_sell.html"
+        class="footer__link link4"
+        target="_blank"
+      >
+        Do Not Sell My Personal Information
+      </a>
+      <a
+        href="../src/pages/cookie.html"
+        class="footer__link link5"
+        target="_blank"
+      >
+        Cookie policy
+      </a>
+      <a
+        href="../src/pages/contact_us.html"
+        class="footer__link link6"
+        target="_blank"
+      >
+        CONTACT US
+      </a>
+
+      <div class="footer__link link7">
+        HomeShowerExpert.com © 2023. All Rights Reserved.
+      </div>
+    </footer>
+  </body>
+</html>

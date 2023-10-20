@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <title>Do not sell my personal information</title>
+  <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+  <meta name="viewport"
+    content="width=device-width, initial-scale=0.8, maximum-scale=1.0, user-scalable=no, height=device-height">
+  <meta name="description" content="Home Shower expert">
+  <meta name="keywords" content="">
+  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="../styles/blocks/terms.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container">
+      <div class="top-actions">
+        <a href="../index.html" class="logo">
+          <img src="../images/header/Logo_new.svg" class="logo_img" alt="Kohler">
+        </a>
+  
+        <div id="overlay" onclick="off()">
+        </div>
+      </div>
+    </div>
+  </header>
+
+      <form
+        id="do_not_sell"
+        action=""
+        class="form do_not_sell"
+        name="submit-to-google-sheet"
+      >
+        <div class="tab__form">
+          <div class="form__title">
+            Do not sell my personal information
+          </div>
+
+          <div class="label-2--text">
+            Please enter your email address to help us find your record in our database.
+          </div>
+
+          <div class="label__title">
+            Email
+          </div>
+          <div class="label-2">
+            <input
+              placeholder="yourmail@site.com"
+              name="email"
+              type="email"
+              autofocus
+              required
+            >
+          </div>
+
+        </div>
+        <button
+          type="submit" form="do_not_sell" 
+          value="Submit"
+          class="submit-button"
+        >
+          Submit
+        </button>
+        <span id="sendText"></span>
+      </form>
+
+  <footer class="footer">
+    <a href="#">
+      <img src="../images/section/logo-6.svg" class="footer__img">
+    </a>
+    
+    <a href="../pages/terms.html" class="footer__link link1" target="_blank">Terms of Use</a>
+    <a href="../pages/privacy_notice.html" class="footer__link link2" target="_blank">Privacy Policy</a>
+    <a href="../pages/partners.html" class="footer__link link3" target="_blank">Premier Partners</a>
+    <a href="../pages/do_not_sell.html" class="footer__link link4" target="_blank">Do Not Sell My Personal Information</a>
+    <a href="../pages/cookie.html" class="footer__link link5" target="_blank">Cookie policy</a>
+    <a href="../pages/contact_us.html" class="footer__link link6" target="_blank">CONTACT US</a>
+
+    <div class="footer__link link7">
+      HomeShowerExpert.com © 2023. All Rights Reserved.
+    </div>
+
+  </footer>
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyIImsDyhgJiYkxE5-jBTI4ioGgR1GGI7h_Yb55NwIwSqijCkRrwSDesQ35rqcwE9Of/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const sendText = document.getElementById('sendText')
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          sendText.innerHTML = "Thank's you data send successfully!"
+          setTimeout(function(){
+            sendText.innerHTML = ""
+        }, 3000)
+        form.reset()
+      })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>

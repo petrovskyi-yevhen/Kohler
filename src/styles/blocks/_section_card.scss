@@ -1,0 +1,109 @@
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 10px 10px 10px;
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 390px;
+    max-height: 700px;
+    background-color: $color-baground;
+    border: 1px solid #e5e7eb;
+    border-radius: 20px;
+    margin-top: $margin-top;
+    margin-bottom: 30px;
+
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+      @include onDesktop {
+        width: 500px;
+        height: 560px;
+        border-radius: 8px;
+        justify-content: start;
+      }
+  
+    &--img {
+      width: 100%;
+      object-fit: cover;
+
+      @include onDesktop {
+        height: 310px;
+        object-fit: cover;
+        border-radius: 8px 8px 0 0;
+      }
+    }
+
+    &--title {
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0.005em;
+    text-align: center;
+    margin-top: $margin-top;
+
+      @include onDesktop {
+        line-height: 24px;
+      }
+    }
+
+    &--text {
+      width: 73%;
+      font-family: Inter;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 20px;
+      letter-spacing: 0.005em;
+      text-align: center;
+      color: #9ca3af;
+      margin-top: $margin-top;
+    }
+  }
+
+  &__title {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0.005em;
+  margin-bottom: $margin-top;
+
+    @include onDesktop {
+    font-family: Inter;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 0.005em;
+    text-align: center;
+    }
+  }
+}
+
+.services__cards--big {
+  @include onDesktop {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(1, 1fr);
+    overflow: scroll;
+    gap: 20px;
+  }
+
+  @include onDesktopBig {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    overflow: scroll;
+    gap: 20px;
+  }
+}
+
+.dsctp {
+  margin-bottom: 20px;
+}
