@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=0.8, user-scalable=0">
     <title>KOHLER LuxStone</title>
     <link rel="stylesheet" href="../src/styles/main.css">
-    <link rel="preconnect" href="http://fonts.googleapis.com">
-    <link rel="preconnect" href="http://fonts.gstatic.com" crossorigin>
-    <link href="http://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   </head>
 
   <body class="page">
@@ -30,7 +30,7 @@
       defer
     >
     </script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
     <header class="header">
       <div class="header__container">
@@ -112,7 +112,7 @@
           <span>
             How much does it cost in 
             <br><span class="colortext">
-              <span id="city"></span>, <span id="country"></span>
+              <span id="city"></span>
             </span> 
           </span>
           <button 
@@ -122,10 +122,10 @@
             Let’s fint out
           </button>
           <script>
-            $.getJSON('http://ip-api.com/json/')
+            $.getJSON('https://api.bigdatacloud.net/data/reverse-geocode-client')
                .done (function(location) {
-                  $('#country').html(location.country);
                   $('#city').html(location.city);
+                  $('#countryName').html(location.country);
                });
           </script>
         </div>
