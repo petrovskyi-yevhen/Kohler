@@ -132,28 +132,71 @@ function submitFormToServer() {
     });
 }
 
-
-
 function validateForm() {
-
   let x, y, i, valid = true;
   x = document.getElementsByClassName("tab");
   y = x[currentTab].getElementsByTagName("input");
-  
+
+  let errorMessages = [];
+  let errorIndex = 0;
+
   for (i = 0; i < y.length; i++) {
-    if (y[i].value == "") {
+    if (y[i].value === "") {
       y[i].className += " invalid";
+      valid = false;
+    } else {
+      y[i].classList.remove("invalid");
+    }
+
+    if (y[i].name === "name" && y[i].value === "") {
+      errorMessages.push("Fill your name, please!");
+    } else if (y[i].type === "email" && !isValidEmail(y[i].value)) {
+      errorMessages.push("Fill the correct e-mail, please!");
+      valid = false;
+    } else if (y[i].type === "tel" && !isValidPhoneNumber(y[i].value)) {
+      errorMessages.push("Fill the correct phone number, please!");
+      valid = false;
+    } else if (y[i].name === "zipCode" && !isValidZIPCode(y[i].value)) {
+      errorMessages.push("Fill the correct ZIP code, please!");
       valid = false;
     }
   }
-  
-  if (!valid) {
-    const popup = document.getElementById("popup");
-    popup.style.display = "block";
 
-    setTimeout(function() {
-      popup.style.display = "none";
-    }, 1500);
+  function showNextErrorMessage() {
+    if (errorMessages.length > errorIndex) {
+      showMessage(errorMessages[errorIndex]);
+      errorIndex++;
+    } 
   }
+
+  if (!valid) {
+    showNextErrorMessage();
+  }
+
   return valid;
+}
+
+function showMessage(message) {
+  const popup = document.getElementById("popup");
+  popup.innerText = message;
+  popup.style.display = "block";
+
+  setTimeout(function() {
+    popup.style.display = "none";
+  }, 1500);
+}
+
+function isValidEmail(email) {
+  const emailPattern = /^[\w-]+(\.[\w-]+)*@[\w-]+(\.[\w-]+)+$/;
+  return emailPattern.test(email);
+}
+
+function isValidPhoneNumber(phoneNumber) {
+  const phonePattern = /^\+1 \(\d{3}\) \d{3}-\d{4}$/;
+  return phonePattern.test(phoneNumber);
+}
+
+function isValidZIPCode(zipCode) {
+  const zipCodePattern = /^\d{5}$/;
+  return zipCodePattern.test(zipCode);
 }

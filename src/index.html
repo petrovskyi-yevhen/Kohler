@@ -38,12 +38,6 @@
       defer
     >
     </script>
-    <script
-      type="text/javascript"
-      src="../src/scripts/slide.js"
-      defer
-    >
-    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
     <header class="header">
@@ -159,7 +153,7 @@
                 class="button--form medium"
                 onclick="openForm(), on()"
               >
-                Order now
+              Get a free quote
               </button>
             </div>
 
@@ -172,7 +166,7 @@
                 class="button--form medium"
                 onclick="openForm(), on()"
               >
-                Order now
+              Get a free quote
               </button>
             </div>
           </div>
@@ -597,6 +591,7 @@
                 placeholder="+1 (000) 000-0000"
                 oninput="this.className = ''"
                 name="phoneNumber"
+                type="tel"
                 required
               >
             </div>
@@ -612,6 +607,7 @@
                 placeholder="yourmail@site.com"
                 oninput="this.className = ''"
                 name="email"
+                type="email"
               >
             </div>
 
@@ -646,12 +642,7 @@
             </button>
           </div>
 
-          <div id="popup" class="popup">
-            <img class="popup-img" src="../src/images/form/Icon.svg">
-            <div class="popup-text">
-              Fill the contact information, please
-            </div>
-          </div>
+          <div id="popup" class="popup"></div>
 
           <div id="error-message">
             Please select at least one option for each question.

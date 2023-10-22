@@ -1,5 +1,5 @@
 # Kohler
-Adaptive site for mobile and desktop
+Adaptive site for mobile and desktop with geocoding
 
 
 
