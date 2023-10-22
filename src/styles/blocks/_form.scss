@@ -2,7 +2,9 @@
   display: flex;
   justify-content: center;
   max-width: 768px;
+  
   margin: 0 auto;
+  background: #fff;
 }
 
 .top-actions-form {
@@ -10,12 +12,16 @@
   position: relative;
   align-items: center;
   justify-content: space-between;
+  height: 82px;
   background-color: $color-baground;
-  padding: 5px;
+  padding: 0px 20px 0px 20px;
+  border: 1px solid #e2e8f0;
+  border-radius: 0px 0px 10px 10px;
 }
 
 .logo_img {
   width: 116px;
+  // padding-left: 50px;
 }
 
 .icon--menu {
@@ -43,8 +49,8 @@
   height: 2px;
   width: 15px;
   transform: rotate(45deg);
-  top: 21px;
-  right: 17px;
+  top: 36px;
+  right: 32px;
 }
 
 .form-line2 {
@@ -52,8 +58,8 @@
   height: 2px;
   width: 15px;
   transform: rotate(-45deg);
-  top: 21px;
-  right: 17px;
+  top: 36px;
+  right: 32px;
 }
 /* !!!!!!  Popup form - схована за замовчуванням  */
 .form-popup {
@@ -63,7 +69,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
   overflow: auto;
   z-index: 3;
 }
@@ -71,9 +77,10 @@
 .form-container {
   box-sizing: border-box;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   flex-direction: column;
   max-width: 768px;
+  min-height: 100vh;
   padding: 10px;
   background-color: white;
   overflow: auto;
@@ -102,6 +109,7 @@
   text-align: left;
   width: 390px;
   margin: 10px 0 20px 20px;
+  color: #000;
 
   &--radio {
     font-family: Inter;
@@ -269,6 +277,7 @@ input.invalid {
   padding: 10px;
   z-index: 999;
   color: #991b1b;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
   &-img {
     position: fixed;
@@ -303,6 +312,7 @@ input.invalid {
   line-height: 22px;
   letter-spacing: 0.005em;
   text-align: left;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
   &-img {
     position: fixed;
@@ -391,6 +401,7 @@ select {
   background: #fef2f2;
   border: 1px solid #ff8181;
   border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   font-family: Inter;
   font-size: 18px;
   font-weight: 600;
@@ -401,6 +412,7 @@ select {
   padding: 10px;
   z-index: 999;
   color: #991b1b;
+
 }
 
 #errorText {

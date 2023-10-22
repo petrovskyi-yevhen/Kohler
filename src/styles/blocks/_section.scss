@@ -3,6 +3,7 @@
   flex-direction: column;
   margin-top: $margin-top;
   position: relative;
+  color: #000;
 }
 
 @include onDesktop {
@@ -137,6 +138,7 @@
   font-weight: 600;
   line-height: 29px;
   letter-spacing: 0.005em;
+  color: #000;
 
   &--title {
     width: 388px;
@@ -187,6 +189,7 @@
     padding-top: 5%;
     background-color: #dbeafe;
     text-align: center;
+    color: #000;
 
     @include onDesktop {
       font-size: 36px;
@@ -272,3 +275,5 @@
     }
   }
 }
+
+

@@ -17,6 +17,8 @@
     border-radius: 20px;
     margin-top: $margin-top;
     margin-bottom: 30px;
+    overflow: hidden;
+
 
     &:hover {
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
