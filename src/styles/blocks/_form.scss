@@ -1,8 +1,7 @@
 .header__form {
   display: flex;
   justify-content: center;
-  max-width: 768px;
-  
+  min-width: 430px;
   margin: 0 auto;
   background: #fff;
 }
@@ -21,7 +20,6 @@
 
 .logo_img {
   width: 116px;
-  // padding-left: 50px;
 }
 
 .icon--menu {
@@ -79,7 +77,7 @@
   display: flex;
   justify-content: start;
   flex-direction: column;
-  max-width: 768px;
+  min-width: 430px;
   min-height: 100vh;
   padding: 10px;
   background-color: white;
@@ -92,6 +90,7 @@
   justify-content: center;
   flex-direction: column;
   margin: 0 auto;
+  min-width: 430px;
 
   &-button {
     display: flex;
@@ -110,6 +109,10 @@
   width: 390px;
   margin: 10px 0 20px 20px;
   color: #000;
+
+  @include onDesktop {
+    width: 640px;
+  }
 
   &--radio {
     font-family: Inter;
@@ -137,6 +140,10 @@
   width: 390px;
   height: 42px;
 
+  @include onDesktop {
+    width: 640px;
+  }
+
   &:hover {
     background-color: #e5e7eb;
   }
@@ -149,8 +156,12 @@
 label {
   display: flex;
   align-items: center;
-  width: 323px;
+  width: 590px;
   height: 40px;
+
+  @include onDesktop {
+    width: 640px;
+  }
 }
 
 .label img {
@@ -182,7 +193,11 @@ label {
   border-radius: 6px;
   border: 1px solid #e5e7eb;
   width: 390px;
-  height: 42px;
+  height: 40px;
+
+  @include onDesktop {
+    width: 640px;
+  }
 }
 
 .label-2 input {
@@ -199,6 +214,10 @@ label {
   letter-spacing: 0.005em;
   color: #9ca3af;
   margin: 10px 0 20px 15px;
+
+  @include onDesktop {
+    width: 640px;
+  }
 }
 
 .label__title {
@@ -207,8 +226,7 @@ label {
   font-weight: 600;
   line-height: 17px;
   letter-spacing: 0.005em;
-  margin-left: 15px;
-  margin-top: 15px;
+  margin: 0 0 15px 15px;
 }
 
 .label-2 input {
@@ -217,8 +235,28 @@ label {
   font-size: 16px;
 }
 
+.tcpa {
+  width: 430px;
+  height: 70px;
+  overflow: scroll;
+  font-family: Inter;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12px;
+  text-align:justify;
+  margin: 0 0 15px 15px;
+
+  @include onDesktop {
+    width: 640px;
+  }
+}
+
 input.invalid {
   background-color: #ffdddd;
+}
+
+.tcpa_link:hover {
+  color: blue;
 }
 
 #prevBtn {
@@ -267,6 +305,7 @@ input.invalid {
   background: #fef2f2;
   border: 1px solid #ff8181;
   border-radius: 6px;
+
   font-family: Inter;
   font-size: 18px;
   font-weight: 600;
@@ -348,6 +387,9 @@ input.invalid {
   align-items: center;
   position: relative;
   margin: 15px;
+  width: 390px;
+  height: 100px;
+
   font-family: Inter;
   font-size: 16px;
   font-weight: 500;
@@ -356,8 +398,6 @@ input.invalid {
   text-align: left;
   border-radius: 6px;
   border: 1px solid #e5e7eb;
-  width: 390px;
-  height: 100px;
 }
 
 .input__text textarea {
@@ -390,6 +430,7 @@ select {
   border: 1px solid #ff8181;
   border-radius: 6px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
   font-family: Inter;
   font-size: 18px;
   font-weight: 600;
@@ -413,6 +454,7 @@ select {
   background: #fef2f2;
   border: 1px solid #ff8181;
   border-radius: 6px;
+  
   font-family: Inter;
   font-size: 18px;
   font-weight: 600;

@@ -48,7 +48,7 @@ function validateFirstStep() {
     document.getElementById("error-message").style.display = "block";
     setTimeout(function () {
       document.getElementById("error-message").style.display = "none";
-    }, 3000);
+    }, 2000);
     return false;
   }
 
@@ -64,7 +64,7 @@ function validateFirstStep() {
     document.getElementById("error-message").style.display = "block";
     setTimeout(function () {
       document.getElementById("error-message").style.display = "none";
-    }, 3000);
+    }, 2000);
     return false;
   }
 
@@ -80,7 +80,7 @@ function validateFirstStep() {
     document.getElementById("error-message").style.display = "block";
     setTimeout(function () {
       document.getElementById("error-message").style.display = "none";
-    }, 3000); 
+    }, 2000); 
     return false;
   }
 
@@ -102,11 +102,11 @@ function nextPrev(n) {
 
   const submitPopup = document.getElementById("success-message");
   submitPopup.style.display = "block";
+  submitFormToServer();
   setTimeout(function() {
     submitPopup.style.display = "none";
-    submitFormToServer();
-    document.getElementById("regForm").submit();
-  }, 3000);
+    form.reset();
+  }, 2000);
     return false;
   }
 
@@ -120,15 +120,16 @@ function submitFormToServer() {
 
   fetch(scriptURL, { method: 'POST', body: new FormData(form) })
     .then(response => {
-      closeForm()
-      form.reset()
+      closeForm();
+      form.reset();
+      document.getElementById("regForm").submit();
     })
     .catch(error => {
       errorText.innerHTML = "Something went wrong, sorry. Try again later"
           setTimeout(function(){
             sendText.innerHTML = ""
-        }, 3000)
-        document.getElementById("regForm").submit()
+        }, 2000)
+        document.getElementById("regForm").submit();
     });
 }
 

@@ -349,13 +349,13 @@ template {
 .uk-link-muted a,
 .uk-link-toggle .uk-link-muted,
 a.uk-link-muted {
-  color: #999
+  color: #0080ff
 }
 
 .uk-link-muted a:hover,
 .uk-link-toggle:hover .uk-link-muted,
 a.uk-link-muted:hover {
-  color: #666
+  color: #0080ff
 }
 
 .uk-link-text a,
@@ -367,7 +367,7 @@ a.uk-link-text {
 .uk-link-text a:hover,
 .uk-link-toggle:hover .uk-link-text,
 a.uk-link-text:hover {
-  color: #999
+  color: #0080ff
 }
 
 .uk-link-heading a,
@@ -379,7 +379,7 @@ a.uk-link-heading {
 .uk-link-heading a:hover,
 .uk-link-toggle:hover .uk-link-heading,
 a.uk-link-heading:hover {
-  color: #1e87f0;
+  color: #0080ff;
   text-decoration: none
 }
 
@@ -8002,7 +8002,7 @@ iframe[uk-cover] {
 .uk-tile-primary:not(.uk-preserve-color) a,
 .uk-tile-secondary:not(.uk-preserve-color) .uk-link,
 .uk-tile-secondary:not(.uk-preserve-color) a {
-  color: #fff
+  color: #0080ff
 }
 
 .uk-card-primary.uk-card-body .uk-link-toggle:hover .uk-link,
@@ -8038,7 +8038,7 @@ iframe[uk-cover] {
 .uk-tile-secondary:not(.uk-preserve-color) .uk-link-toggle:hover .uk-link,
 .uk-tile-secondary:not(.uk-preserve-color) .uk-link:hover,
 .uk-tile-secondary:not(.uk-preserve-color) a:hover {
-  color: #fff
+  color: #0080ff
 }
 
 .uk-card-primary.uk-card-body :not(pre)>code,
@@ -8382,7 +8382,7 @@ iframe[uk-cover] {
 .uk-tile-primary:not(.uk-preserve-color) a.uk-link-muted,
 .uk-tile-secondary:not(.uk-preserve-color) .uk-link-muted a,
 .uk-tile-secondary:not(.uk-preserve-color) a.uk-link-muted {
-  color: rgba(255, 255, 255, .5)
+  color: #0080ff
 }
 
 .uk-card-primary.uk-card-body .uk-link-muted a:hover,
@@ -8418,7 +8418,7 @@ iframe[uk-cover] {
 .uk-tile-secondary:not(.uk-preserve-color) .uk-link-muted a:hover,
 .uk-tile-secondary:not(.uk-preserve-color) .uk-link-toggle:hover .uk-link-muted,
 .uk-tile-secondary:not(.uk-preserve-color) a.uk-link-muted:hover {
-  color: rgba(255, 255, 255, .7)
+  color: #0080ff
 }
 
 .uk-card-primary.uk-card-body .uk-link-text a:hover,
@@ -8454,7 +8454,7 @@ iframe[uk-cover] {
 .uk-tile-secondary:not(.uk-preserve-color) .uk-link-text a:hover,
 .uk-tile-secondary:not(.uk-preserve-color) .uk-link-toggle:hover .uk-link-text,
 .uk-tile-secondary:not(.uk-preserve-color) a.uk-link-text:hover {
-  color: rgba(255, 255, 255, .5)
+  color: #0080ff
 }
 
 .uk-card-primary.uk-card-body .uk-link-heading a:hover,
@@ -8490,7 +8490,7 @@ iframe[uk-cover] {
 .uk-tile-secondary:not(.uk-preserve-color) .uk-link-heading a:hover,
 .uk-tile-secondary:not(.uk-preserve-color) .uk-link-toggle:hover .uk-link-heading,
 .uk-tile-secondary:not(.uk-preserve-color) a.uk-link-heading:hover {
-  color: #fff
+  color: #0080ff
 }
 
 .uk-card-primary.uk-card-body .uk-heading-divider,
