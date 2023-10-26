@@ -68,3 +68,11 @@
   from {opacity: .4} 
   to {opacity: 1}
 }
+
+.uk-position-relative {
+  margin-bottom: 10px;
+
+  @include onDesktop {
+    margin-bottom: 64px;
+  }
+}

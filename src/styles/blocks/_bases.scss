@@ -112,6 +112,7 @@ p {
       margin-left: 20px;
       width: 450px;
     }
+
   }
 
   &-title p {
@@ -159,6 +160,22 @@ p {
 
   @include onDesktop {
     font-size: 36px;
+  }
+
+  &-last {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: 0.005em; 
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 24px;
+
+    @include onDesktop {
+      font-size: 36px;
+      margin-bottom: 36px;
+    }
   }
 }
 

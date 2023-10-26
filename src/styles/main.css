@@ -32,6 +32,15 @@
   margin-top: 10px;
 }
 
+.last {
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .last {
+    margin-bottom: 30px;
+  }
+}
+
 .header__form {
   display: flex;
   justify-content: center;
@@ -841,6 +850,13 @@ table {
   margin: 5px 5px;
   margin-top: 16px;
   text-align: center;
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .photo__discription {
+    margin-bottom: 48px;
+    justify-content: center;
+  }
 }
 .photo__discription--item {
   width: 117px;
@@ -875,7 +891,6 @@ table {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 40px;
   text-align: center;
   font-family: Inter;
   font-size: 24px;
@@ -954,7 +969,7 @@ table {
 }
 @media (min-width: 768px) {
   .lifetime__warranties--conteiner-text {
-    font-size: 36px;
+    font-size: 24px;
     line-height: 43px;
   }
 }
@@ -1252,6 +1267,8 @@ table {
 @media (min-width: 768px) {
   .customer_reviews--title-big {
     font-size: 36px;
+    margin-top: 64px;
+    margin-bottom: 48px;
   }
 }
 .customer_reviews--title-imgs {
@@ -1265,6 +1282,14 @@ table {
   margin-top: 30px;
   margin-bottom: 20px;
   z-index: 0;
+}
+@media (min-width: 768px) {
+  .customer_reviews--title-imgs {
+    width: 944px;
+    font-size: 36px;
+    margin-top: 63px;
+    margin-bottom: 64px;
+  }
 }
 .customer_reviews--text {
   font-family: Inter;
@@ -1403,6 +1428,15 @@ table {
     opacity: 1;
   }
 }
+.uk-position-relative {
+  margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+  .uk-position-relative {
+    margin-bottom: 64px;
+  }
+}
+
 p {
   margin-top: 10px;
 }
@@ -1530,6 +1564,12 @@ p {
     font-size: 36px;
     font-weight: 600;
     line-height: 44px;
+  }
+}
+
+@media (min-width: 768px) {
+  .hidden-br {
+    display: none;
   }
 }
 
@@ -1695,6 +1735,9 @@ p {
     width: 754px;
     font-size: 36px;
     line-height: 44px;
+  }
+  .shower__walls--title .last {
+    margin-bottom: 22px;
   }
 }
 
@@ -2269,6 +2312,22 @@ p {
 @media (min-width: 768px) {
   .bases__title {
     font-size: 36px;
+  }
+}
+.bases__title-last {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0.005em;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 24px;
+}
+@media (min-width: 768px) {
+  .bases__title-last {
+    font-size: 36px;
+    margin-bottom: 36px;
   }
 }
 

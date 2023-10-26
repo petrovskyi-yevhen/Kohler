@@ -139,6 +139,12 @@ p {
   }
 }
 
+.hidden-br {
+  @include onDesktop {
+    display: none;
+  }
+}
+
 .accessories__text {
   font-family: Inter;
   font-size: 18px;

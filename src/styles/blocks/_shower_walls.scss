@@ -69,8 +69,14 @@
     width: 754px;
     font-size: 36px;
     line-height: 44px;
+
+    .last {
+      margin-bottom: 22px;
+    }
   }
 }
+
+
 
 .shower__walls--cards {
   display: flex;

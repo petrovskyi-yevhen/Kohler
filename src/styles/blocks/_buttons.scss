@@ -30,3 +30,11 @@
   width: 389px;
   margin-top: $margin-top;
 }
+
+.last {
+  margin-bottom: 20px;
+
+  @include onDesktop {
+    margin-bottom: 30px;
+  }
+}
