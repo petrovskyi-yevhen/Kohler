@@ -47,9 +47,12 @@
             <img src="../src/images/header/Logo_new.svg" class="logo_img" alt="Kohler">
           </a>
 
-          <button
+          <button 
+            class="button--form"
             onclick="openForm(), on()"
-            class="button--form">Get free consultation</button>
+          >
+            Get free consultation
+          </button>
 
           <div id="overlay" onclick="off()">
           </div>
@@ -392,12 +395,13 @@
       </section>
     </main>
 
+    <div class="form__conteiner">
       <div class="form-popup" id="myForm">
 
         <header class="header__form" id="myFormHeader">
           <div class="top-actions-form">
             <a href="#" class="logo">
-              <img src="../src/images/header/Logo_new.svg" class="logo_img" alt="Kohler">
+              <img src="../src/images/header/Logo_new.svg" class="header__logo-img" alt="Kohler">
             </a>
   
             <div
@@ -413,6 +417,7 @@
 
         <form
           id="regForm"
+          action=""
           class="form-container"
           name="submit-to-google-sheet"
         >
@@ -514,7 +519,6 @@
                 value="price"
               >
             </div>
-
           </div>
 
           <div class="tab">
@@ -541,7 +545,6 @@
                 placeholder="+1 (000) 000-0000"
                 oninput="this.className = ''"
                 name="phoneNumber"
-                type="tel"
                 required
               >
             </div>
@@ -557,7 +560,6 @@
                 placeholder="yourmail@site.com"
                 oninput="this.className = ''"
                 name="email"
-                type="email"
               >
             </div>
 
@@ -615,9 +617,14 @@
             </button>
           </div>
 
-          <div id="popup" class="popup"></div>
+          <div id="popup" class="popup">
+            <img class="popup-img" src="../src/images/form/Icon.svg">
+            <div class="popup-text">
+              Fill the contact information, please
+            </div>
+          </div>
 
-          <div id="error-message">
+          <div id="error-message" style="display: none;">
             Please select at least one option for each question.
           </div>
 
@@ -630,6 +637,7 @@
           <span id="errorText"></span>
         </form>
       </div>
+    </div>
 
     <footer class="footer">
       <a href="#">
