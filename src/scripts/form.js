@@ -151,10 +151,10 @@ function validateForm() {
 
     if (y[i].name === "name" && y[i].value === "") {
       errorMessages.push("Fill your name, please!");
-    } else if (y[i].type === "email" && !isValidEmail(y[i].value)) {
+    } else if (y[i].name === "email" && !isValidEmail(y[i].value)) {
       errorMessages.push("Fill the correct e-mail, please!");
       valid = false;
-    } else if (y[i].type === "tel" && !isValidPhoneNumber(y[i].value)) {
+    } else if (y[i].name === "phoneNumber" && !isValidPhoneNumber(y[i].value)) {
       errorMessages.push("Fill the correct phone number, please!");
       valid = false;
     } else if (y[i].name === "zipCode" && !isValidZIPCode(y[i].value)) {

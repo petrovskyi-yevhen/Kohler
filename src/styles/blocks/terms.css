@@ -408,7 +408,7 @@ sup {
 
 a {
   color: var(--bs-link-color);
-  text-decoration: none
+  text-decoration: none;
 }
 
 a:hover {
@@ -423,7 +423,7 @@ a:not([href]):not([class]):hover {
 
 code,
 pre {
-  font-family: var(--bs-font-monospace);
+  /* font-family: var(--bs-font-monospace); */
   font-size: 1em
 }
 
