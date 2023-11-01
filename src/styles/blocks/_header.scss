@@ -37,6 +37,7 @@
 }
 
 .icon--menu {
+  position: relative;
   width: 38px;
   height: 38px;
   background-color: #fff;
@@ -47,14 +48,25 @@
 
 .line {
   display: block;
-  margin-top: 4px;
-  margin-left: 30%;
   height: 1px;
   width: 40%;
-  border-radius: 10px;
   background: #0e2431;
 }
 
 .line1 {
-  margin-top: 13px;
+  position: absolute;
+  top: 35%;
+  left: 30%;
+}
+
+.line2 {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+}
+
+.line3 {
+  position: absolute;
+  top: 65%;
+  left: 30%;
 }

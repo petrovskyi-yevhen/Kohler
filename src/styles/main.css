@@ -6,7 +6,7 @@
   background-color: #fbdf8d;
   border: none;
   border-radius: 6px;
-  font-size: 16px;
+  font-size: 20px;
   color: #000;
   font-weight: 600;
   line-height: 21.78px;
@@ -19,7 +19,9 @@
   width: 124px;
   height: 42px;
   margin: 0px 0px 5px 0px;
+  padding: 0;
   background-color: #2595eb;
+  font-size: 20px;
 }
 
 .medium {
@@ -97,8 +99,8 @@
   height: 2px;
   width: 15px;
   transform: rotate(45deg);
-  top: 36px;
-  right: 32px;
+  top: 37%;
+  left: 2%;
 }
 
 .form-line2 {
@@ -106,8 +108,8 @@
   height: 2px;
   width: 15px;
   transform: rotate(-45deg);
-  top: 36px;
-  right: 32px;
+  top: 37%;
+  left: 2%;
 }
 
 /* !!!!!!  Popup form - схована за замовчуванням  */
@@ -333,7 +335,7 @@ input.invalid {
   cursor: pointer;
   color: #000;
   font-family: Inter;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 600;
   line-height: 18px;
   letter-spacing: 0.005em;
@@ -349,7 +351,7 @@ input.invalid {
   background-color: #fbdf8d;
   cursor: pointer;
   font-family: Inter;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 600;
   line-height: 18px;
   letter-spacing: 0.005em;
@@ -421,7 +423,7 @@ input.invalid {
   background-color: #fbdf8d;
   cursor: pointer;
   font-family: Inter;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 600;
   line-height: 18px;
   letter-spacing: 0.005em;
@@ -575,6 +577,7 @@ select {
 }
 
 .icon--menu {
+  position: relative;
   width: 38px;
   height: 38px;
   background-color: #fff;
@@ -585,16 +588,27 @@ select {
 
 .line {
   display: block;
-  margin-top: 4px;
-  margin-left: 30%;
   height: 1px;
   width: 40%;
-  border-radius: 10px;
   background: #0e2431;
 }
 
 .line1 {
-  margin-top: 13px;
+  position: absolute;
+  top: 35%;
+  left: 30%;
+}
+
+.line2 {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+}
+
+.line3 {
+  position: absolute;
+  top: 65%;
+  left: 30%;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -768,7 +782,7 @@ table {
   color: #1f2937;
   margin-top: 10px;
   margin-left: 20px;
-  width: 390px;
+  width: 430px;
 }
 @media (min-width: 768px) {
   .section-title {
@@ -783,6 +797,20 @@ table {
   }
 }
 
+.main-title {
+  text-align: center;
+  margin-inline: auto;
+  margin-block-start: 5vh;
+  transform: translateY(-50%);
+}
+@media (min-width: 768px) {
+  .main-title {
+    text-align: left;
+    margin-left: 40px;
+    transform: translateY(0%);
+  }
+}
+
 .section-text {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
@@ -794,6 +822,7 @@ table {
   margin-left: 20px;
   margin-right: 20px;
   width: 430px;
+  text-align: left;
 }
 @media (min-width: 768px) {
   .section-text {

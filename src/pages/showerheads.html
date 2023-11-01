@@ -45,18 +45,17 @@
             Get free consultation
           </button>
 
-          <div id="overlay" onclick="off()">
-          </div>
-
           <div
             onclick="dropMenu(), on()"
             class="icon icon--menu dropbtn hamburger-lines"
             alt="burger-menu"
           >
-            <span class="line line1"></span>
-            <span class="line line2"></span>
-            <span class="line line3"></span>
+            <div class="line line1 dropbtn"></div>
+            <div class="line line2 dropbtn"></div>
+            <div class="line line3 dropbtn"></div>
           </div>
+
+          <div id="overlay" onclick="off()"></div>
           
           <div id="myDropdown" class="dropdown-content">
             <a href="../../src/index.html" class="dropdown-content__item">What we do</a>
@@ -83,7 +82,17 @@
         </div>
 
         <div class="section-photos">
-          <video src="../images/showerheads/Showerheads.mp4" class="section-photo" playsinline="playsinline" autobuffer="autobuffer" autoplay="autoplay" loop="loop" preload="auto" muted="muted"></video>
+          <video
+            src="../images/showerheads/Showerheads.mp4"
+            class="section-photo"
+            playsinline="playsinline"
+            autobuffer="autobuffer"
+            autoplay="autoplay"
+            loop="loop"
+            preload="auto"
+            muted="muted"
+            controls="controls"
+          ></video>
         </div>
 
         <div class="section__text--desktop-heads">

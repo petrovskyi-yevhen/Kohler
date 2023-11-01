@@ -47,23 +47,22 @@
 
           <button 
             class="button--form"
-            onclick="openForm(), on()"
+            onclick="openForm()"
           >
             Get free consultation
           </button>
 
-          <div id="overlay" onclick="off()">
-          </div>
-
-          <div
+          <!-- <div
             onclick="dropMenu(), on()"
             class="icon icon--menu dropbtn hamburger-lines"
             alt="burger-menu"
           >
-            <span class="line line1"></span>
-            <span class="line line2"></span>
-            <span class="line line3"></span>
-          </div>
+            <span class="line line1 dropbtn"></span>
+            <span class="line line2 dropbtn"></span>
+            <span class="line line3 dropbtn"></span>
+          </div> -->
+
+          <div id="overlay" onclick="off()"></div>
           
           <div id="myDropdown" class="dropdown-content">
             <a href="../src/index.html" class="dropdown-content__item">What we do</a>
@@ -84,12 +83,11 @@
     <main class="main">
       <section class="title">
         <div class="desktop-title">
-          <h1 class="section-title">
+          <div class="section-title main-title">
             FIND THE
             <span class="colortext">BEST DEAL</span>
-            ON SHOWER INSTALLATIONS
-            IN YOUR AREA
-          </h1>
+            ON SHOWER INSTALLATIONS IN YOUR AREA
+          </div>
           <div class="section-text">
             Durable, versatile, and budget-friendly showers -
             that's what Kohler LuxStone provides. Our showers offer various styles, cater to diverse bathing requirements, and can be custom-built for any space without the need for building permits.
@@ -97,7 +95,17 @@
         </div>
 
         <div class="section-photos">
-          <video src="../src/images/section/feature-hero-video-overlay.mp4" class="section-photo" playsinline="playsinline" autobuffer="autobuffer" autoplay="autoplay" loop="loop" preload="auto" muted="muted"></video>
+          <video
+            src="../src/images/section/feature-hero-video-overlay.mp4"
+            class="section-photo"
+            playsinline="playsinline"
+            autobuffer="autobuffer"
+            autoplay="autoplay"
+            loop="loop"
+            preload="auto" 
+            muted="muted"
+            controls="controls"
+          ></video>
         </div>
 
         <div class="photo__discription">
@@ -220,7 +228,17 @@
           </div>
 
           <div class="section-photos">
-            <video src="../src/images/section/main-process.mp4" class="section-photo install" playsinline="playsinline" autobuffer="autobuffer" autoplay="autoplay" loop="loop" preload="auto" muted="muted"></video>
+            <video
+              src="../src/images/section/main-process.mp4"
+              class="section-photo install"
+              playsinline="playsinline"
+              autobuffer="autobuffer"
+              autoplay="autoplay"
+              loop="loop"
+              preload="auto"
+              muted="muted"
+              controls="controls"
+            ></video>
           </div>
 
           <div class="client_location">
@@ -320,7 +338,8 @@
 
         <div class="customer_reviews">
           <img
-            src="../src/images/section/Google-Logo 1.svg" alt="google_logo"
+            src="../src/images/section/Google-Logo 1.svg"
+            alt="google_logo"
             class="customer_reviews--logo"
           >
           <div class="customer_reviews--title">

@@ -26,7 +26,7 @@
   color: $color-text;
   margin-top: $margin-top;
   margin-left: 20px;
-  width: 390px;
+  width: 430px;
 
   @include onDesktop {
     font-family: Inter;
@@ -37,6 +37,19 @@
     text-align: left;
     width: 478px;
     margin: 30px 0 0 40px;
+  }
+}
+
+.main-title {
+  text-align: center;
+  margin-inline: auto;
+  margin-block-start: 5vh;
+  transform: translateY(-50%);
+
+  @include onDesktop {
+    text-align: left;
+    margin-left: 40px;
+    transform: translateY(0%);
   }
 }
 
@@ -51,6 +64,7 @@
   margin-left: 20px;
   margin-right: 20px;
   width: 430px;
+  text-align: left;
 
   @include onDesktop {
     font-family: Inter;
@@ -137,7 +151,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  // margin-top: 40px;
   text-align: center;
   font-family: Inter;
   font-size: 24px;
@@ -280,5 +293,3 @@
     }
   }
 }
-
-
