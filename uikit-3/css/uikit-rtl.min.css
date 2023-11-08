@@ -29,12 +29,12 @@ a:hover {
 
 abbr[title] {
   text-decoration: underline dotted;
-  -webkit-text-decoration-style: dotted
+  -webkit-text-decoration-style: dotted;
 }
 
 b,
 strong {
-  font-weight: bolder
+  font-weight: bolder;
 }
 
 :not(pre)>code,
@@ -314,10 +314,6 @@ pre code {
 
 :focus {
   outline: 0
-}
-
-:focus-visible {
-  outline: 2px dotted #333
 }
 
 ::selection {
@@ -992,13 +988,13 @@ button.uk-icon:not(:disabled) {
 
 .uk-icon-button:hover {
   background-color: #ebebeb;
-  color: #666
+  color: #666;
 }
 
 .uk-active>.uk-icon-button,
 .uk-icon-button:active {
   background-color: #dfdfdf;
-  color: #666
+  color: #666;
 }
 
 .uk-range {

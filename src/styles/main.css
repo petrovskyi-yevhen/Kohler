@@ -216,11 +216,11 @@ label {
   margin-right: 10px;
 }
 
-.label + input {
+.label input {
   position: absolute;
   right: 10px;
 }
-.label + input:checked {
+.label input:checked {
   color: #3b82f6;
 }
 
@@ -248,11 +248,11 @@ label {
 
 .label-2 input {
   width: 395px;
-  height: 25px;
+  height: 39px;
   font-size: 16px;
   border: none;
   padding-left: 10px;
-  border-radius: 10px;
+  border-radius: 6px;
 }
 @media (min-width: 768px) {
   .label-2 input {
@@ -945,12 +945,21 @@ table {
   width: 388px;
 }
 
+.install {
+  margin-bottom: 48px;
+}
+
 @media (min-width: 768px) {
-  .install {
-    display: none;
+  .install_title {
+    margin: 54px 0 16px 0;
   }
 }
 
+.lifetime__warranties {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 @media (min-width: 768px) {
   .lifetime__warranties--desktop {
     background-color: #dbeafe;
@@ -962,9 +971,8 @@ table {
   font-weight: 600;
   line-height: 29px;
   letter-spacing: 0.005em;
-  height: 75px;
-  margin: 10px 0 10px 0;
-  padding-top: 5%;
+  padding-top: 9px;
+  padding-bottom: 13px;
   background-color: #dbeafe;
   text-align: center;
   color: #000;
@@ -973,10 +981,11 @@ table {
   .lifetime__warranties--title {
     font-size: 36px;
     line-height: 44px;
+    padding-top: 24px;
   }
 }
 .lifetime__warranties--conteiner {
-  width: 380px;
+  width: 390px;
   margin: auto;
 }
 .lifetime__warranties--conteiner-text {
@@ -992,7 +1001,8 @@ table {
 @media (min-width: 768px) {
   .lifetime__warranties--conteiner-text {
     font-size: 24px;
-    line-height: 43px;
+    line-height: 29px;
+    margin-top: 26px;
   }
 }
 .lifetime__warranties--conteiner-items {
@@ -1037,14 +1047,12 @@ table {
   color: #9ca3af;
 }
 .lifetime__warranties--imgs {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  margin: 20px 30px 30px 30px;
+  height: 67px;
+  margin: 20px 0px 26px 0px;
 }
 @media (min-width: 768px) {
   .lifetime__warranties--imgs {
-    padding-bottom: 20px;
+    margin: 24px 0px 26px 0px;
   }
 }
 
@@ -2432,9 +2440,10 @@ p {
   display: flex;
   flex-direction: column;
   align-items: start;
-  height: 304px;
+  height: 215px;
   gap: 10px;
   margin-top: 40px;
+  padding-top: 20px;
   background-color: #2563eb;
 }
 @media (min-width: 768px) {
@@ -2456,32 +2465,37 @@ p {
   text-align: left;
   margin-left: 20px;
   color: #fff;
+  text-decoration: underline;
 }
 .footer__link:nth-last-child(1) {
   margin-top: 20px;
   margin-bottom: 15px;
 }
 
+.link7 {
+  text-decoration: none;
+}
+
 @media (min-width: 768px) {
   .footer > .link1 {
     position: absolute;
     top: 30px;
-    left: 17%;
+    left: 10%;
   }
   .footer > .link2 {
     position: absolute;
     top: 60px;
-    left: 17%;
+    left: 10%;
   }
   .footer > .link3 {
     position: absolute;
-    top: 30px;
-    left: 43%;
+    top: 60px;
+    left: 40%;
   }
   .footer > .link4 {
     position: absolute;
-    top: 60px;
-    left: 43%;
+    top: 30px;
+    left: 40%;
   }
   .footer > .link5 {
     position: absolute;
@@ -2497,5 +2511,6 @@ p {
     position: absolute;
     bottom: 10px;
     left: 35%;
+    text-decoration: none;
   }
 }/*# sourceMappingURL=main.css.map */

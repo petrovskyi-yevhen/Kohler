@@ -2,9 +2,10 @@
   display: flex;
   flex-direction: column;
   align-items: start;
-  height: 304px;
+  height: 215px;
   gap: 10px;
   margin-top: 40px;
+  padding-top: 20px;
   background-color: $color-blue;
 
   @include onDesktop {
@@ -26,6 +27,7 @@
     text-align: left;
     margin-left: 20px;
     color: #fff;
+    text-decoration: underline;
 
     &:nth-last-child(1) {
       margin-top: 20px;
@@ -34,29 +36,33 @@
   }
 }
 
+.link7 {
+  text-decoration: none;
+}
+
 @include onDesktop {
   .footer > .link1 {
     position: absolute;
     top: 30px;
-    left: 17%;
+    left: 10%;
   }
 
   .footer > .link2 {
     position: absolute;
     top: 60px;
-    left: 17%;
+    left: 10%;
   }
 
   .footer > .link3 {
     position: absolute;
-    top: 30px;
-    left: 43%;
+    top: 60px;
+    left: 40%;
   }
 
   .footer > .link4 {
     position: absolute;
-    top: 60px;
-    left: 43%;
+    top: 30px;
+    left: 40%;
   }
 
   .footer > .link5 {
@@ -75,5 +81,6 @@
     position: absolute;
     bottom: 10px;
     left: 35%;
+    text-decoration: none;
   }
 }

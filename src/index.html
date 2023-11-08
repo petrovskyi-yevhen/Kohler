@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=0.8, user-scalable=0">
     <title>KOHLER LuxStone</title>
     <link rel="stylesheet" type="text/css" href="../uikit-3/css/uikit.min.css">
-    <link rel="stylesheet" href="../src/styles/main.css">
+    <link rel="stylesheet" type="text/css" href="../src/styles/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -51,16 +51,6 @@
           >
             Get free consultation
           </button>
-
-          <!-- <div
-            onclick="dropMenu(), on()"
-            class="icon icon--menu dropbtn hamburger-lines"
-            alt="burger-menu"
-          >
-            <span class="line line1 dropbtn"></span>
-            <span class="line line2 dropbtn"></span>
-            <span class="line line3 dropbtn"></span>
-          </div> -->
 
           <div id="overlay" onclick="off()"></div>
           
@@ -223,7 +213,7 @@
             </div>
           </div>
 
-          <div class="client_location install">
+          <div class="client_location install_title">
             Installation process
           </div>
 
@@ -559,9 +549,10 @@
             </div>
             <div class="label-2">
               <input
-                placeholder="+1 (000) 000-0000"
+                placeholder="(000) 000-0000"
                 oninput="this.className = ''"
                 name="phoneNumber"
+                id="phoneNumber"
               >
             </div>
             <div class="label-2--text">
@@ -656,9 +647,6 @@
     </div>
 
     <footer class="footer">
-      <a href="#">
-        <img src="../src/images/section/logo-6.svg" class="footer__img">
-      </a>
       <a
         href="../src/pages/terms.html"
         class="footer__link link1"

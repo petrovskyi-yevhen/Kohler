@@ -133,6 +133,11 @@ function submitFormToServer() {
     });
 }
 
+document.getElementById('phoneNumber').addEventListener('input', function (e) {
+  let x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
+  e.target.value = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
+});
+
 function validateForm() {
   let x, y, i, valid = true;
   x = document.getElementsByClassName("tab");
@@ -154,7 +159,7 @@ function validateForm() {
     } else if (y[i].name === "email" && !isValidEmail(y[i].value)) {
       errorMessages.push("Fill the correct e-mail, please!");
       valid = false;
-    } else if (y[i].name === "phoneNumber" && !isValidPhoneNumber(y[i].value)) {
+    } else if (y[i].name === "phoneNumber" && y[i].value === "") {
       errorMessages.push("Fill the correct phone number, please!");
       valid = false;
     } else if (y[i].name === "zipCode" && !isValidZIPCode(y[i].value)) {
@@ -192,12 +197,6 @@ function isValidEmail(email) {
   return emailPattern.test(email);
 }
 
-function isValidPhoneNumber(phoneNumber) {
-  const phonePattern = /^\+1 \(\d{3}\) \d{3}-\d{4}$/;
-  return phonePattern.test(phoneNumber);
-}
-
 function isValidZIPCode(zipCode) {
-  const zipCodePattern = /^\d{5}$/;
-  return zipCodePattern.test(zipCode);
+  return /(^\d{5}$)|(^\d{5}-\d{4}$)/.test(zipCode);
 }

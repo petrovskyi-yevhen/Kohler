@@ -184,12 +184,19 @@
 }
 
 .install {
+  margin-bottom: 48px;
+}
+
+.install_title {
   @include onDesktop {
-    display: none;
+    margin: 54px 0 16px 0;
   }
 }
 
 .lifetime__warranties {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   &--desktop {
     @include onDesktop {
       background-color: #dbeafe;
@@ -202,9 +209,8 @@
     font-weight: 600;
     line-height: 29px;
     letter-spacing: 0.005em;
-    height: 75px;
-    margin: 10px 0 10px 0;
-    padding-top: 5%;
+    padding-top: 9px;
+    padding-bottom: 13px;
     background-color: #dbeafe;
     text-align: center;
     color: #000;
@@ -212,11 +218,12 @@
     @include onDesktop {
       font-size: 36px;
       line-height: 44px;
+      padding-top: 24px;
     }
   }
 
   &--conteiner {
-    width: 380px;
+    width: 390px;
     margin: auto;
 
       &-text {
@@ -232,7 +239,8 @@
 
         @include onDesktop {
           font-size: 24px;
-          line-height: 43px;
+          line-height: 29px;
+          margin-top: 26px;
         }
       }
 
@@ -283,13 +291,11 @@
   }
 
   &--imgs {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin: 20px 30px 30px 30px;
-    
+    height: 67px;
+    margin: 20px 0px 26px 0px;
+
     @include onDesktop {
-      padding-bottom: 20px;
+      margin: 24px 0px 26px 0px;
     }
   }
 }
