@@ -408,8 +408,7 @@ input.invalid {
   border: 1px solid #ccc;
   border-radius: 8px;
   padding-bottom: 20px;
-  margin-top: 70px;
-  margin-bottom: 70px;
+  margin-top: 10%;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
   @include onDesktop {
@@ -422,6 +421,7 @@ input.invalid {
 .contact_us {
   font-family: Inter;
   width: 420px;
+  min-height:100%;
   margin: 0 auto;
   border: 1px solid #ccc;
   border-radius: 8px;
