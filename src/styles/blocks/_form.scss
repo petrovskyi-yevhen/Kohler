@@ -408,7 +408,26 @@ input.invalid {
   border: 1px solid #ccc;
   border-radius: 8px;
   padding-bottom: 20px;
-  margin-top: 20px;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  @include onDesktop {
+    width: 670px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+}
+
+.contact_us {
+  font-family: Inter;
+  width: 420px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding-bottom: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
   @include onDesktop {
